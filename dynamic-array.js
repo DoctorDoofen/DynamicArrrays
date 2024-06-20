@@ -1,8 +1,9 @@
 class DynamicArray {
 
-  constructor(defaultSize=4) {
-
-    // Your code here 
+  constructor(data, capacity, length, defaultSize = 4) {
+    this.data = new Array(defaultSize)
+    this.capacity = 4
+    this.length = 0
 
   }
 
@@ -18,5 +19,7 @@ class DynamicArray {
 
 }
 
-
+let test = new DynamicArray()
+console.log(test)
+console.log()
 module.exports = DynamicArray;
